@@ -18,7 +18,7 @@ import (
 	"github.com/wdvxdr1123/ZeroBot/extension/rate"
 )
 
-//nolint: asciicheck
+// nolint: asciicheck
 type 婚姻登记 struct {
 	sync.Mutex
 	mp map[int64]map[int64]*userinfo
@@ -31,7 +31,7 @@ type userinfo struct {
 	targetname string // 对象名称
 }
 
-//nolint: asciicheck
+// nolint: asciicheck
 func 新登记处() (db 婚姻登记) {
 	db.mp = make(map[int64]map[int64]*userinfo, 64)
 	return
